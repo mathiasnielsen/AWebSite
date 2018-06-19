@@ -4,12 +4,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">-->
 <!--<link rel="stylesheet" href="website_stylesheet.css">-->
-<link rel="stylesheet" href="own_stylesheet.css">
+<link rel="stylesheet" href="stylesheets/own_stylesheet.css">
 <body>
 
 	<!-- Content will go here... -->
 
 	<h1>Welcome to here</h1>
+
+	<a href="about_me_page.html" target="_self">Link to page 2</a>
 
 	<div class="anim_infi"></div>
 
@@ -33,29 +35,23 @@
 	<div class="content-light-theme">
 		<section>
 		  <img class="mySlides" src="assets/img_la.jpg" style="width:10%;max-height: 280px">
-		  <img class="mySlides" src="assets/img_ny.jpg" style="width:10%;max-height: 280px">
+		  <img class="mySlides" src="assets/img_ny.jpg" style="height:100%;">
 		  <img class="mySlides" src="assets/img_chicago.jpg" style="width:10%;max-height: 280px">
 		</section>
 	</div>
 
-	<script src="slider.js"></script>
-	<script>
-		function printStuff(text)
-		{
-			console.log(text);
-
-			var txt = "Test";
-			document.getElementById("debug_text").innerHTML = txt;
-		}
-	</script>
-
 	<!-- The Contact Section -->
-	<div class="content-dark-theme">
+	<div 
+	class="content-dark-theme"
+	id="contact">
 	  	<h1>Contact</h1>
 	  	<h2>Mathias Kirkegaard</h2>
 	  	<h3>Tranevej 3</h3>
 	</div>
 
+	<!-- Scripts used for the website -->
+	<script src="scripts/slider.js"></script>
+	<script src="scripts/diagnostics.js"></script>
 
 	<!--... Too here -->
 
