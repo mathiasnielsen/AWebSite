@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">-->
+<!--<link rel="stylesheet" href="website_stylesheet.css">-->
+<link rel="stylesheet" href="own_stylesheet.css">
+<body>
+
+	<!-- Content will go here... -->
+
+	<h1>Welcome to here</h1>
+
+	<div class="anim_infi"></div>
+
+	<p class="special" id="debug_text">I am inside a box</p>
+
+	<h2 class="special">Me too</h2>
+
+	<!-- Navigation -->
+	<nav class="w3-bar w3-black">
+	  <a href="#home" class="w3-button w3-bar-item">Home</a>
+	  <a href="#band" class="w3-button w3-bar-item">Band</a>
+	  <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+	  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+	</nav>
+
+	<!-- BUTTON -->
+	<button onclick=printStuff("hello") value="world">Next image</button>
+	<input id="myinputfield" value="This is some text" type="button">​
+
+	<!-- Slide Show -->
+	<div class="content-light-theme">
+		<section>
+		  <img class="mySlides" src="assets/img_la.jpg" style="width:10%;max-height: 280px">
+		  <img class="mySlides" src="assets/img_ny.jpg" style="width:10%;max-height: 280px">
+		  <img class="mySlides" src="assets/img_chicago.jpg" style="width:10%;max-height: 280px">
+		</section>
+	</div>
+
+	<script src="slider.js"></script>
+	<script>
+		function printStuff(text)
+		{
+			console.log(text);
+
+			var txt = "Test";
+			document.getElementById("debug_text").innerHTML = txt;
+		}
+	</script>
+
+	<!-- The Contact Section -->
+	<div class="content-dark-theme">
+	  	<h1>Contact</h1>
+	  	<h2>Mathias Kirkegaard</h2>
+	  	<h3>Tranevej 3</h3>
+	</div>
+
+
+	<!--... Too here -->
+
+</body>
+</html>

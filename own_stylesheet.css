@@ -1,0 +1,107 @@
+P.special
+{
+	color : green;
+	border: solid red;
+	background: solid red;
+	font-family: Courier New, Helvetica, sans-serif;
+}
+
+h1 
+{
+	font-size:36px
+}
+
+h2.special
+{
+	color : green;
+	border: solid red;
+	font-size:30px;
+}
+
+h3
+{
+	font-size:24px
+}
+
+h4
+{
+	font-size:20px
+}
+
+h5
+{
+	font-size:18px
+}
+
+h6
+{
+	font-size:16px
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-weight:400;
+	margin:10px;
+	letter-spacing:2px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .w3-bar{width:100%;overflow:hidden}.w3-center .w3-bar{display:inline-block;width:auto} */
+
+div.anim
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+div.anim_infi
+{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+div.content-light-theme
+{
+    background-color: green;
+    border: solid red;
+    background: solid red;
+    width:100%;
+    min-height:480px;
+    font-family: Courier New, Helvetica, sans-serif;
+}
+
+div.content-dark-theme
+{
+    background-color: black;
+    border: solid red;
+    background: solid red;
+    width:100%;
+    min-height:480px;
+    color: green;
+    font-family: Courier New, Helvetica, sans-serif;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
