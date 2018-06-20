@@ -1,6 +1,6 @@
 P.special
 {
-	color : green;
+	color : blue;
 	border: solid red;
 	background: solid red;
 	font-family: Courier New, Helvetica, sans-serif;
@@ -101,7 +101,7 @@ div.content-dark-theme
 
 /* Standard syntax */
 @keyframes example {
-    from {background-color: red;}
+    from {background-color: blue;}
     to {background-color: yellow;}
 }
 
