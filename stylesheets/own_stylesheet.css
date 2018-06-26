@@ -6,6 +6,20 @@ P.special
 	font-family: Courier New, Helvetica, sans-serif;
 }
 
+span.w3-display-topright
+{
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+img.image
+{
+    max-width:100%;
+    height:auto;
+}
+.w3-button{border:none;display:inline-block;outline:0;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none!important;color:#fff;background-color:#000;text-align:center;cursor:pointer;white-space:nowrap}
+
 h1 
 {
 	font-size:36px
