@@ -20,20 +20,12 @@
 		</nav>
 	</div>
 
-	<div class="content">
-
-
+	<div id="content">
 		<div
 			class="section light-content"
 			id="home">
-			<form action="about_me_page.html">
-			    <input type="submit" value="Portfolio" />
-			</form>
-			<form action="playground">
-			    <input type="submit" value="Playground" />
-			</form>
-			<a href="about_me_page.html" target="_self">Portfolio</a>
-			<a href="playground.html" target="_self">Playground</a>
+			<a href="about_me_page.html" class="button button1">About me</a>
+			<a href="playground.html" class="button button1">Playground</a>
 		</div>
 
 		<div 
@@ -53,28 +45,6 @@
 	</div>
 
 	<script src="scripts/diagnostics.js"></script>
-
-	<script>
-		window.onscroll = function() {myFunction()};
-
-		var navbar = document.getElementById("navbar");
-		var sticky = navbar.offsetTop;
-
-		var navHeight = $('#navbar').height();
-
-		function myFunction() 
-		{
-		  if (window.pageYOffset >= sticky) 
-		  {
-		    navbar.classList.add("sticky")
-		  	document.getElementById("myDiv").style.paddingTop = navHeight;
-		  } 
-		  else 
-		  {
-		    navbar.classList.remove("sticky");
-		  }
-		}
-	</script>
 	<!--... Too here -->
 
 </body>
