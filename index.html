@@ -2,57 +2,79 @@
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">-->
-<!--<link rel="stylesheet" href="website_stylesheet.css">-->
-<link rel="stylesheet" href="stylesheets/own_stylesheet.css">
+<link rel="stylesheet" href="stylesheets/klab_styles.css">
 <body>
 
 	<!-- Content will go here... -->
 
-	<h1>Welcome to here</h1>
-
-	<a href="about_me_page.html" target="_self">Link to page 2</a>
-
-	<div class="anim_infi"></div>
-
-	<p class="special" id="debug_text">I am inside a box</p>
-
-	<h2 class="special">Me too</h2>
-
-	<!-- Navigation -->
-	<nav class="w3-bar w3-black">
-	  <a href="#home" class="w3-button w3-bar-item">Home</a>
-	  <a href="#band" class="w3-button w3-bar-item">Band</a>
-	  <a href="#tour" class="w3-button w3-bar-item">Tour</a>
-	  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
-	</nav>
-
-	<!-- BUTTON -->
-	<button onclick=printStuff("hello") value="world">Next image</button>
-	<input id="myinputfield" value="This is some text" type="button">​
-
-	<!-- Slide Show -->
-	<div class="content-light-theme">
-		<section>
-		  <img class="mySlides" src="assets/img_la.jpg" style="width:10%;max-height: 280px">
-		  <img class="mySlides" src="assets/img_ny.jpg" style="height:100%;">
-		  <img class="mySlides" src="assets/img_chicago.jpg" style="width:10%;max-height: 280px">
-		</section>
+	<div class="header">
+		<h1>Welcome to Kirkegaard Lab</h1>
 	</div>
 
-	<!-- The Contact Section -->
-	<div 
-	class="content-dark-theme"
-	id="contact">
-	  	<h1>Contact</h1>
-	  	<h2>Mathias Kirkegaard</h2>
-	  	<h3>Tranevej 3</h3>
+
+	<div id="navbar">
+		<nav class="w3-bar w3-black">
+		  <a href="#home" class="w3-button w3-bar-item">Home</a>
+		  <a href="#something" class="w3-button w3-bar-item">Something</a>
+		  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+		</nav>
 	</div>
 
-	<!-- Scripts used for the website -->
-	<script src="scripts/slider.js"></script>
+	<div class="content">
+
+
+		<div
+			class="section light-content"
+			id="home">
+			<form action="about_me_page.html">
+			    <input type="submit" value="Portfolio" />
+			</form>
+			<form action="playground">
+			    <input type="submit" value="Playground" />
+			</form>
+			<a href="about_me_page.html" target="_self">Portfolio</a>
+			<a href="playground.html" target="_self">Playground</a>
+		</div>
+
+		<div 
+			class="section dark-content"
+			id="something">
+		  	<h1>Something</h1>
+		</div>
+
+		<!-- The Contact Section -->
+		<div 
+			class="section light-content" 
+			id="contact">
+		  	<h1>Contact</h1>
+		  	<h2>Mathias Kirkegaard</h2>
+		  	<h3>Tranevej 3</h3>
+		</div>
+	</div>
+
 	<script src="scripts/diagnostics.js"></script>
 
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		var navHeight = $('#navbar').height();
+
+		function myFunction() 
+		{
+		  if (window.pageYOffset >= sticky) 
+		  {
+		    navbar.classList.add("sticky")
+		  	document.getElementById("myDiv").style.paddingTop = navHeight;
+		  } 
+		  else 
+		  {
+		    navbar.classList.remove("sticky");
+		  }
+		}
+	</script>
 	<!--... Too here -->
 
 </body>

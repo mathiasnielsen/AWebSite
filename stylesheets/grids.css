@@ -39,41 +39,19 @@ div.modal-content
 {
 	margin:auto;
 	background-color:#fff;
-	position:relative;
 	padding:0;
 	outline:0;
 	max-height: 100px;
+	max-width: 100px;
 	background-color: green;
-}
-@media (max-width:600px)
-{
-	.modal-content
-	{
-		margin:0 10px;
-		width:auto!important;
-	}
-}
-@media (max-width:768px)
-{
-	.modal-content
-	{
-		width:500px;
-	}
-}
-@media (min-width:993px)
-{
-	.modal-content
-	{
-		width:900px;
-	}
+	position: relative;
 }
 
 div.center
 {
-	width:auto;
-	max-width: 50%;
-	max-height: 50%;
-	margin: 20%;
+	margin: auto;
+	width:50%;
+	transform: translateY(50%);
 }
 
 button.clostbtn
@@ -94,11 +72,13 @@ div.animate-zoom
 {
 	from
 	{
+		transform: translateY(50%);
 		bottom:-300px;
 		opacity:0;
 	}
 	to
 	{
+		transform: translateY(50%);
 		bottom:0;
 		opacity:1
 	}
