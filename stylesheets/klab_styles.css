@@ -64,6 +64,7 @@ div.section
 .header {
   background-color: #f1f1f1;
   text-align: center;
+  min-height: 200px
 }
 
 #navbar {
